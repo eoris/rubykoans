@@ -5,10 +5,8 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 class DiceSet
   attr_accessor :values
 
-  def roll (times)
+  def roll(times)
     @values = []
-    break
-    if times > 5
     times.times do |i|
       @values << rand(1..5)
     end
